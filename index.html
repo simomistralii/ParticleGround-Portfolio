@@ -18,25 +18,20 @@
 
 <div id="particles">
   <div id="intro">
-      <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10; margin-bottom: 25px;">
-        <img src="assets/3dgifmaker07535.gif" height="35" width="35">&nbsp;
-        EOS Ecosystem
-        &nbsp;<img src="assets/3dgifmaker07535.gif" height="35" width="35">
-      </h2>
+      <div style="display: flex; justify-content: center; gap: 1vw; font-family: 'Syncopate', sans-serif; font-weight: 10; margin-bottom: 3vh;">
+        <img style="margin-top: auto; margin-bottom: auto; width: 4vw; height: 4vw;" src="assets/3dgifmaker07535.gif">
+        <div style="margin-top: auto; margin-bottom: auto; font-size: 4vw;">EOS Ecosystem</div>
+        <img style="margin-top: auto; margin-bottom: auto; width: 4vw; height: 4vw;" src="assets/3dgifmaker07535.gif">
+      </div>
 
-      <h4 style="width: 50%; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
-        Our mission is to build a cross-chain NFT marketplace that enables creators to reach a wider audience and collectors to discover and trade unique digital assets across different blockchains.
-      </h4> 
-      <h4 style="width: 50%; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
-        Our platform offers a range of features that make it stand out from the crowd, including the ability to trade our native token $EOS on Solana, Polygon, Aptos, and Binance Smart Chain (BSC) blockchains.
-      </h4>
-      <h4 style="width: 50%; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
-        We also provide staking and breeding options for our users to maximize the value of their NFTs.
-      </h4>
+      <div style="width: 50%; font-size: 1.1vw; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
+        <span id="lien" ></span>
+      </div>
 
 
-      <div class="loadingClass">
-        <div id="yazı">█ █ █ <span style="color:black">█ █ █ █ █ █ █ █ █ █ </span>31%
+
+      <div class="loadingClass" style="margin-top: 3vh;">
+        <div id="yazı">█ █ █ <span style="color:gray">█ █ █ █ █ █ █ █ █ █ </span>31%
           <br>&gt; Phase 1: Community Building and Token Launch
           <br>&gt; Phase 2: Genesis NFT Collection, Staking, and Cross-Chain Liquidity  <span id="imleç">█</span>
         </div>
@@ -55,6 +50,28 @@
     <a title="Medium" href="https://medium.com/@eos_ecosystem" style="color: white;"><i class="fab fa-medium" style="font-size: 2em;"></i></a>
   </div>
 </div>
+
+<script type='text/javascript'>
+  var letexte = 'EOS Ecosystem offers a cross-chain NFT marketplace that enables creators to reach a wider audience and collectors to discover and trade unique digital assets.';
+  var montimer;
+  var cmpt = 0;
+  function typewriter(){
+     lelien = document.getElementById('lien');
+     if(cmpt < letexte.length){
+        courant = lelien.innerHTML.substring(0, lelien.innerHTML.length -1);
+        courant += letexte.charAt(cmpt)+" ";
+        lelien.innerHTML = courant;
+     }
+     else{
+        lelien.innerHTML = type;
+     }
+     cmpt++;
+     setTimeout("typewriter()",100);
+  }
+  window.onload = function(){
+     typewriter();
+  }
+</script>
 
 </body>
 </html>
