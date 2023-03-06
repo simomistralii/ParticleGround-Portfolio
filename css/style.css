@@ -129,3 +129,49 @@ p {
     height: 4px;
   }
 }
+
+
+
+
+
+.loadingClass div {
+  color: white;
+  font-family: Monaco, monospace;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  
+  animation: 120ms infinite normal glitch;
+}
+
+.loadingClass span {
+  animation: 1.5s infinite normal imleç;
+}
+
+
+@keyframes glitch {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40%,
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+
+@keyframes imleç {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40% {
+    opacity: 0;
+    left: -2px;
+  }
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
