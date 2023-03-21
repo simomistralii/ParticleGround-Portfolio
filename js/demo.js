@@ -28,7 +28,7 @@ $(document).ready(function() {
 */
 
 
- var letexte = 'EOS Ecosystem offers a cross-chain NFT marketplace that enables creators to reach a wider audience and collectors to discover and trade unique digital assets.';
+ var letexte = 'Empowered Online System offers a cross-chain NFT marketplace that enables creators to reach a wider audience and collectors to discover and trade unique digital assets.';
   var montimer;
   var cmpt = 0;
   function typewriter(){
